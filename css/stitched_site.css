@@ -1,8 +1,26 @@
-.stitched_jumbotron {
-	text-align: center;
+.stitched_logo_container {
+	background-color: darkgrey;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+
 }
 
 .jumbo_logo {
-	max-width: 80%;
-	max-height: 80%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1280px;
+	height: 540px;
+}
+
+@font-face {
+    font-family: Oasis;
+    src: url(Oasis-BW0JV.ttf);
+}
+
+.stitched_h3 {
+    font-family: Oasis;
+    color: black;
+    font-size: 42pt;
 }
