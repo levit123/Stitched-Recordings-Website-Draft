@@ -16,8 +16,8 @@
 </head>
 <body>
 	<!--NAVBAR-->
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		<a class="navbar-brand" href="#">Navbar</a>
+	<nav class="navbar navbar-expand-lg navbar-light stitched_nav" >
+		<a class="navbar-brand" id="stitched_nav_a" href="#">Navbar</a>
 	  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 	    	<span class="navbar-toggler-icon"></span>
 	  	</button>
@@ -26,44 +26,66 @@
 	    	<ul class="navbar-nav mr-auto">
 	    		<!--first navbar item-->
 	      		<li class="nav-item active">
-	        		<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+	        		<a class="nav-link" id="stitched_nav_a" href="#home">Home <span class="sr-only">(current)</span></a>
 	      		</li>
 	      		<!--second navbar item-->
 	      		<li class="nav-item">
-	        		<a class="nav-link" href="#">About</a>
+	        		<a class="nav-link" id="stitched_nav_a" href="#about">About</a>
 	      		</li>
 	      		<!--navbar item that opens dropdown menu when clicked-->
 	      		<li class="nav-item dropdown">
 	        		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Social Media And Music Links</a>
 	        		<!--dropdown menu and it's items-->
-	        		<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+	        		<div class="dropdown-menu stitched_dropdown" aria-labelledby="navbarDropdown">
 	        			<!--dropdown menu items for links to social media-->
-	          			<a class="dropdown-item" href="#">Instagram</a>
-	          			<a class="dropdown-item" href="#">Facebook</a>
-	          			<a class="dropdown-item" href="#">Twitter</a>
+	          			<a class="dropdown-item" id="stitched_nav_a" href="#">Instagram</a>
+	          			<a class="dropdown-item" id="stitched_nav_a" href="#">Facebook</a>
+	          			<a class="dropdown-item" id="stitched_nav_a" href="#">Twitter</a>
 	          			<!--divider between two different types of links-->
 	          			<div class="dropdown-divider"></div>
 	          			<!--dropdown menu items for links to music platforms-->
-	          			<a class="dropdown-item" href="#">Soundcloud</a>
-	          			<a class="dropdown-item" href="#">Spotify</a>
+	          			<a class="dropdown-item" id="stitched_nav_a" href="#">Soundcloud</a>
+	          			<a class="dropdown-item" id="stitched_nav_a" href="#">Spotify</a>
 	        		</div>
 	      		</li>
 	      		<!--fourth navbar item (disabled)-->
 	      		<li class="nav-item">
-	        		<a class="nav-link disabled" href="#">Disabled</a>
+	        		<a class="nav-link disabled" id="stitched_nav_a" href="#">Disabled</a>
 	      		</li>
 	    	</ul>
 	    	<form class="form-inline my-2 my-lg-0">
-	      		<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-	      		<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+	      		<input class="form-control mr-sm-2 stitched_search" type="search" placeholder="Search" aria-label="Search">
+	      		<button class="btn btn-outline-success my-2 my-sm-0 stitched_search_button" type="submit">Search</button>
 	    	</form>
 	  	</div>
 	</nav>
 	<!--END OF NAVBAR-->
-		<div class="stitched_logo_container">
-			<img src="./media/images/logo_jumbo_image.png" class="jumbo_logo">
-			<h3 class="stitched_h3">Grunge lolol</h3>
+
+	<!--LOGO-->
+	<div class="stitched_logo_container" id="#home">
+		<img src="./media/images/logo_jumbo_image.png" class="jumbo_logo">
+		<h3 class="stitched_h3">Music Without Limits</h3>
+	</div>
+	<!--END OF LOGO-->
+
+	<!--ABOUT-->
+	<div class="stitched_about" id="#about">
+		<div class="stitched_row">
+			<div class="stitched_column">
+				<p class="stitched_text1">Based in the Pacific Northwest, Stitched Recordings works closely with artists to produce, publish, and distribute music.
+					<br><br>
+					Restrained by no genre limits, we are constantly experimenting with new business ventures. Some of it will succeed, some of it will fail.
+					<br><br>
+					Expect greatness.
+				</p>
+			</div>
+			<div class="stitched_column" style="border: white solid 2px;">
+				<div style="text-align: center; color: white;">
+					<p>Temp text, put image here maybe</p>
+				</div>
+			</div>
 		</div>
+
 	</div>
 </body>
 </html>

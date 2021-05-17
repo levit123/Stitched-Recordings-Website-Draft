@@ -1,26 +1,119 @@
-.stitched_logo_container {
-	background-color: darkgrey;
-	position: absolute;
-	width: 100%;
-	height: 100%;
-
-}
-
-.jumbo_logo {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 1280px;
-	height: 540px;
-}
-
+/*adds the ability to use the Oasis font to the website*/
 @font-face {
     font-family: Oasis;
     src: url(Oasis-BW0JV.ttf);
 }
 
+/*======================================================================================
+NAVBAR STYLING
+======================================================================================*/
+
+/*custom class to add on to the existing bootstrap classes for the navbar*/
+.stitched_nav {
+	background-color: black;
+	border: white groove 2px;
+}
+
+/*styles the nav anchor items*/
+#stitched_nav_a {
+	color: white;
+	font-family: Oasis;
+	font-size: 16pt;
+}
+
+/*styles the Bootstrap dropdown menu that appears when you click one of the nav items*/
+.stitched_dropdown {
+	background-color: black;
+}
+
+/*styles individual dropdown menu items*/
+#navbarDropdown {
+	color: white;
+	font-family: Oasis;
+	font-size: 16pt;
+}
+
+.stitched_search {
+	background-color: lightgrey;
+	border: green  2px;
+	border-radius: 2px;
+}
+
+.stitched_search_button {
+	color: white;
+	font-family: Oasis;
+	font-size: 16pt;
+}
+
+/*======================================================================================
+END OF NAVBAR STYLING
+======================================================================================*/
+
+/*======================================================================================
+TOP OF PAGE STYLING
+======================================================================================*/
+
+/*container for the logo and it's header text*/
+.stitched_logo_container {
+	background-color: black;
+	text-align: center;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	border: white solid 2px;
+
+}
+
+/*styling for the logo*/
+.jumbo_logo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -32px;
+	width: 1280px;
+	height: 540px;
+}
+
+/*custom styling for h3 elements*/
 .stitched_h3 {
+	margin-top: -100px;
+	margin-bottom: 50px;
     font-family: Oasis;
-    color: black;
+    color: darkgrey;
     font-size: 42pt;
+}
+
+/*======================================================================================
+END OF TOP OF PAGE STYLING
+======================================================================================*/
+
+.stitched_about {
+	background-color: black;
+	text-align: left;
+	display: inline-block;
+}
+
+.stitched_text1 {
+	font-family: Oasis;
+	font-size: 16pt;
+	color: white;
+	margin-top: 4%;
+	margin-bottom: 4%;
+	margin-left: 4%;
+	margin-right: 0%;
+}
+
+.stitched_row {
+	display: flex;
+	width: 100%;
+}
+
+.stitched_row:after {
+	clear: both;
+	content: "";
+}
+
+.stitched_column {
+	width: 100%;
+	float: left;
 }
